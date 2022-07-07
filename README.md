@@ -34,7 +34,9 @@ The analysis involved the use of data from Alphabet Soup's business team. The CS
     
     ASK_AMT
     
-  - The remaining columns; 'EIN' and 'NAME' served as unique identifiers for the applying organizations and therefore did not have any bearing on predicting the   outcome of funding. Hence both variables were not included in the model. 
+  - The remaining columns; 'EIN' and 'NAME' served as unique identifiers for the applying organizations and therefore did not have any bearing on predicting the   outcome of funding. Hence both variables were not included in the model.
+  
+  ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/identifiers.PNG)
 
 - Compiling, Training, and Evaluating the Model
 
@@ -44,23 +46,33 @@ The analysis involved the use of data from Alphabet Soup's business team. The CS
   The Relu function was used to activate the first and second layers.
   As a binary classifier the Sigmoid function was the best to be used to activate the output layer. 
   
+  ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/nodes%20and%20layers.PNG)
+  
+  
   - The model could not achieve the target performance. The accuracy after evaluation was below 75%.
+  
   
   - There was no significant improvement to the initial model performance of 72.73% after several efforts to optimize the model.
   
     To improve performance the following steps were taken;
     
-      Reshaped the features variables by removing the 'STATUS' column
-      ![]()
+     - Reshaped the features variables by removing the 'STATUS' column
+      ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/identifiers2.PNG)
       
-      Applied more bining on the 'APPLICATION TYPE" feature.
-      ![]()
       
-      Increased the hidden layers for the model.
-      ![]()
+     - Applied more bining on the 'APPLICATION TYPE" feature.
+     
+      Initial Model
+      ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/bucket%201.PNG)
       
-      Changed the optimizer for compiling the model. 
-      ![]()
+      Optimized Model
+      ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/bucket2.PNG)
+      
+     - Increased the hidden layers for the model.
+       ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/nodes%20and%20layers2.PNG)
+      
+     - Changed the optimizer for compiling the model. 
+     ![](https://github.com/emmanuelbrim/Neural_Network_Charity_Analysis/blob/main/Resources/optimizer.PNG)
       
      The final performance of the model to predict outcomes showed an accuracy of 72.85%.
 
